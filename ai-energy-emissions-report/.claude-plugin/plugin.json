@@ -1,0 +1,5 @@
+{
+  "name": "ai-energy-emissions-report",
+  "version": "1.0.0",
+  "description": "Estimate the electricity consumption and GHG emissions of AI inference from Claude session token data, and produce a DSL-branded PDF report using the Watershed Activity Tier framework."
+}

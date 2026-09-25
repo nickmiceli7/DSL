@@ -1,0 +1,5 @@
+{
+  "name": "project-init",
+  "version": "1.0.0",
+  "description": "Initialize a new Claude project for DSL or any analogous research lab \u2014 scans uploaded skill files, checks for the project index and reference docs, and configures the project environment."
+}

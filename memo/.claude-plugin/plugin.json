@@ -1,0 +1,5 @@
+{
+  "name": "memo",
+  "version": "1.0.0",
+  "description": "Create a professional DSL memo or memorandum as a polished Word (.docx) file following DSL's structured, section-based memo conventions."
+}

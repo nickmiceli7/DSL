@@ -1,0 +1,5 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "Create a new Excel spreadsheet (.xlsx) \u2014 trackers, Gantt-style project timelines, budget sheets, or data tables \u2014 following DSL formatting standards."
+}

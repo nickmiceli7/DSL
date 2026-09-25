@@ -1,0 +1,5 @@
+{
+  "name": "project-updater",
+  "version": "1.0.0",
+  "description": "Check an already-initialized DSL project for drift between its declared index and actual files, and refresh index.md."
+}

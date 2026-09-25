@@ -1,0 +1,5 @@
+{
+  "name": "technical-bulletin",
+  "version": "1.0.0",
+  "description": "Scaffold and generate a DSL technical bulletin as a branded .pptx file, through an intake, structure-confirmation, markdown-scaffold, and generation sequence."
+}

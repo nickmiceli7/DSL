@@ -1,0 +1,69 @@
+{
+  "name": "dsl-claude-skills",
+  "owner": {
+    "name": "Dynamic Sustainability Lab",
+    "url": "https://www.dynamicslab.org"
+  },
+  "plugins": [
+    {
+      "name": "project-init",
+      "source": "./project-init",
+      "description": "Initialize a new Claude project for DSL or any analogous research lab \u2014 scans uploaded skill files, checks for the project index and reference docs, and configures the project environment."
+    },
+    {
+      "name": "project-updater",
+      "source": "./project-updater",
+      "description": "Check an already-initialized DSL project for drift between its declared index and actual files, and refresh index.md."
+    },
+    {
+      "name": "output-style",
+      "source": "./output-style",
+      "description": "Standing conversational style instruction for DSL project sessions \u2014 tone, formatting, and fabrication-prevention rules applied continuously, not deliverable formatting."
+    },
+    {
+      "name": "output-evaluator",
+      "source": "./output-evaluator",
+      "description": "Evaluate the quality of any DSL research deliverable \u2014 memos, decks, guidebooks, project docs, or Claude skills \u2014 against DSL's standard, with an intake check before evaluating."
+    },
+    {
+      "name": "ai-energy-emissions-report",
+      "source": "./ai-energy-emissions-report",
+      "description": "Estimate the electricity consumption and GHG emissions of AI inference from Claude session token data, and produce a DSL-branded PDF report using the Watershed Activity Tier framework."
+    },
+    {
+      "name": "external-research-assistant",
+      "source": "./external-research-assistant",
+      "description": "Conduct structured external web research with cited findings, source evaluation, uncertainty flags, and a research gaps section, for sustainability, ESG, and policy research."
+    },
+    {
+      "name": "figures",
+      "source": "./figures",
+      "description": "Guidance for creating figures, charts, maps, tables, or data visualizations for DSL work, tailored to the researcher's data, goal, and intended deliverable."
+    },
+    {
+      "name": "excel",
+      "source": "./excel",
+      "description": "Create a new Excel spreadsheet (.xlsx) \u2014 trackers, Gantt-style project timelines, budget sheets, or data tables \u2014 following DSL formatting standards."
+    },
+    {
+      "name": "memo",
+      "source": "./memo",
+      "description": "Create a professional DSL memo or memorandum as a polished Word (.docx) file following DSL's structured, section-based memo conventions."
+    },
+    {
+      "name": "technical-bulletin",
+      "source": "./technical-bulletin",
+      "description": "Scaffold and generate a DSL technical bulletin as a branded .pptx file, through an intake, structure-confirmation, markdown-scaffold, and generation sequence."
+    },
+    {
+      "name": "work-recorder",
+      "source": "./work-recorder",
+      "description": "Open and maintain a DSL research fellow's session ledger \u2014 which chats belong to which task, what each session produced, and whether the task finished."
+    },
+    {
+      "name": "ai-usage-assessment-per-chat",
+      "source": "./ai-usage-assessment-per-chat",
+      "description": "Assess how a person worked with Claude in one specific chat and render a visual AI Usage Assessment scorecard scoring the four competencies of AI fluency, with growth coaching."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "ai-usage-assessment-per-chat",
+  "version": "1.0.0",
+  "description": "Assess how a person worked with Claude in one specific chat and render a visual AI Usage Assessment scorecard scoring the four competencies of AI fluency, with growth coaching."
+}

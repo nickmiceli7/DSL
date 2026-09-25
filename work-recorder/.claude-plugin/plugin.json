@@ -1,0 +1,5 @@
+{
+  "name": "work-recorder",
+  "version": "1.0.0",
+  "description": "Open and maintain a DSL research fellow's session ledger \u2014 which chats belong to which task, what each session produced, and whether the task finished."
+}
