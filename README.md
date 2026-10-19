@@ -9,7 +9,6 @@ change — see the caveats below before assuming that happens instantly.
 
 | Plugin | What it does |
 | --- | --- |
-| `project-updater` | Check an initialized DSL project for drift and refresh `index.md`. |
 | `output-style` | Standing conversational tone/formatting rules for DSL sessions. |
 | `output-evaluator` | Evaluate the quality of a DSL deliverable against DSL's standard. |
 | `ai-energy-emissions-report` | Estimate energy/GHG emissions of a Claude session, DSL-branded PDF. |
@@ -21,9 +20,8 @@ change — see the caveats below before assuming that happens instantly.
 | `work-recorder` | Maintain a DSL fellow's session ledger. |
 | `ai-usage-assessment-per-chat` | Score one chat against the four AI fluency competencies. |
 
-Deliberately **not** included: `initiative-pull`, `initiative-push` (single-project Hub sync,
-still being piloted), and `consult-with-dominick` / `consult-with-naoki` (personal
-consult-booking skills, not needed lab-wide).
+Deliberately **not** included: `consult-with-dominick` / `consult-with-naoki` (personal
+consult-booking skills, contain personal information).
 
 ## Installing a plugin (personal install, no admin role needed)
 
