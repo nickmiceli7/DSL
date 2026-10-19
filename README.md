@@ -9,7 +9,6 @@ change — see the caveats below before assuming that happens instantly.
 
 | Plugin | What it does |
 | --- | --- |
-| `project-init` | Initialize a new Claude project for DSL or an analogous research lab. |
 | `project-updater` | Check an initialized DSL project for drift and refresh `index.md`. |
 | `output-style` | Standing conversational tone/formatting rules for DSL sessions. |
 | `output-evaluator` | Evaluate the quality of a DSL deliverable against DSL's standard. |
