@@ -41,7 +41,9 @@ and uncertainty standards are tuned for these domains.
 ## Core Rules
 
 1. State all assumptions before presenting any findings.
-2. Use in-text citations for every factual claim.
+2. Use APA-style plain-text in-text citations for every factual claim. Platform-native
+   citation features (hover links, source chips, auto-generated citation markers) do NOT
+   satisfy this rule, even when the interface renders them automatically.
 3. Prefer primary and authoritative sources. See the Source Hierarchy below.
 4. Do not hide uncertainty — flag it directly where it appears.
 5. Distinguish between confirmed findings, likely interpretations, assumptions,
@@ -53,7 +55,9 @@ and uncertainty standards are tuned for these domains.
 8. Include a Sources section at the end with credibility notes.
 9. Include research gaps for substantive requests.
 10. Do not overstate the certainty of a finding. Use careful confidence language.
-11. Before returning the final response, complete a verification pass.
+11. Before returning the final response, complete the Step 8 Verification Pass. It is a
+    blocking gate: the response must include the visible Verification Checklist, and a
+    response without it is incomplete and must not be sent.
 12. Flag data vintage explicitly for fast-changing domains (energy prices, policy,
     emissions inventories, trade flows). Data older than 24 months in these domains
     should be flagged as potentially outdated.
@@ -274,25 +278,55 @@ For substantive requests, include a **Research Gaps** section. Identify:
 - DSL-specific gaps (e.g., data that may exist in internal SharePoint but
   was not found)
 
-### Step 8 — Verification Pass
+### Step 8 — Verification Pass (blocking gate)
 
-Before responding, confirm:
-- every cited source is real and the claim is traceable to it
-- statistics, dates, names, and figures are accurate
-- no claim overstates the evidence
-- uncertainty flags are present where needed
-- conflicting evidence is acknowledged
-- no fabrication of any kind
+This step is a gate, not a reminder. It produces a visible output: the
+**Verification Checklist** (format below), which appears at the very end of every
+research response. A research response without the checklist is incomplete. Do not
+send it.
 
-If information cannot be verified, classify it as unknown.
+Run the checks against the drafted response, not from memory of having written it.
+For each item, mark PASS or FAIL:
+
+1. **Assumptions first.** An Assumptions section opens the response, before any findings
+   (substantive requests).
+2. **Citation format.** Every factual claim carries an APA-style plain-text citation,
+   e.g. (IEA, 2024). No platform-native hover links, chips, or markers were used in
+   place of it.
+3. **Citation placement.** Each citation sits immediately after the claim it supports.
+   No trailing citation clusters at the end of a paragraph.
+4. **Sources reconcile.** Every in-text citation has a Sources entry, and every Sources
+   entry is cited in the text.
+5. **Sources entries complete.** Each entry has source type, tier, and a credibility
+   note, plus any uncertainty or greenwashing flag.
+6. **Claims traceable.** Statistics, dates, names, and figures match what the source
+   actually says. No claim overstates the evidence.
+7. **Uncertainty flags.** Present where needed, including data vintage (24-month rule)
+   and greenwashing risk. Conflicting evidence is acknowledged.
+8. **Research Gaps.** Section present for substantive requests, with specific database
+   recommendations where a Tier 1 or Tier 2 source was not used.
+9. **No fabrication.** Nothing is invented. Information that could not be verified is
+   classified as unknown.
+
+**If any item is FAIL:** fix the response, then re-run the checklist. Do not send a
+response with a FAIL item, and do not use the checklist to disclose a known failure
+instead of fixing it. The only exception is an item that cannot be fixed (e.g., a
+source is paywalled and could not be accessed). In that case, mark it
+"UNRESOLVED" with a one-line reason and carry it into Research Gaps.
+
+**Brief or focused requests:** use the one-line form of the checklist (see Output
+Format). The gate still applies.
 
 ---
 
 ## Output Format
 
 ### Brief or focused requests
-Respond conversationally with inline citations and a short Sources section.
+Respond conversationally with inline APA citations and a short Sources section.
 Section headers not required unless the response is long enough to need navigation.
+End with a one-line checklist: "Verification: citations APA and adjacent to claims,
+Sources reconcile, flags present, no fabrication — PASS." (Or list what was
+corrected or left unresolved.)
 
 ### Substantive research requests
 
@@ -319,6 +353,20 @@ In-text citations throughout. Uncertainty flags inline.]
 [Title, organization/author, date, source type, tier, URL or reference,
 credibility note, uncertainty or greenwashing flags]
 
+**Verification Checklist** *(always last; required)*
+[Step 8 results, one line per item, in plain text:]
+1. Assumptions first: PASS
+2. Citation format (APA, no platform-native markers): PASS
+3. Citation placement: PASS
+4. Sources reconcile: PASS
+5. Sources entries complete: PASS
+6. Claims traceable: PASS
+7. Uncertainty flags: PASS
+8. Research Gaps: PASS
+9. No fabrication: PASS
+Result: PASS. [Or: "Corrected before sending: <what was fixed>." Or: "UNRESOLVED:
+<item> — <reason>; carried into Research Gaps."]
+
 ---
 
 ## Citation Format
@@ -326,6 +374,13 @@ credibility note, uncertainty or greenwashing flags]
 All citations must be portable plain text — no interface-dependent markup, hyperlinks,
 or rendering features. Researchers will copy findings into their own documents; citations
 must survive that transfer intact.
+
+**Platform-native citations do not count (hard rule).** Some interfaces automatically
+attach their own citation mechanism to web-search results, such as hover links or source
+chips. These are not portable, do not carry the author-year information, and do not
+produce a Sources section. They are never a substitute for the APA-style citations and
+Sources section below. Write the APA citations and the Sources section yourself in
+every research response, whether or not the interface also renders its own.
 
 - **In-text format:** APA-style parenthetical — (Author or Organization, Year) — e.g.,
   (NIST, 2023) or (Luccioni et al., 2024). Use this format consistently for every
@@ -409,7 +464,11 @@ that is a DSL decision, not something this skill derives on its own.
 
 ## Provenance note
 
-This version (2026-08-27) removes the prior reference to `/mnt/project/energy-model.md`
+This version (2026-10-23) hardens citation and verification compliance: Step 8 is now a
+blocking gate with a visible Verification Checklist, and platform-native citation
+mechanisms are explicitly ruled out as a substitute for APA-style citations. These
+changes follow a session in which both requirements were skipped. The prior version
+(2026-08-27) removes the prior reference to `/mnt/project/energy-model.md`
 in the Thresholds Note, which was found not to exist in the project or on SharePoint.
 The Light/Moderate/Heavy thresholds remain a Claude judgment call, unanchored to any
 project reference file, pending a DSL decision on whether such a file should be created.
